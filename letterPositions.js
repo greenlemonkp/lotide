@@ -18,17 +18,17 @@ function eqArrays (firstArray, secondArray) {
 const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
-  for (let position = 0; position < sentence.length; position++) {
-      if (sentence[position] !== ' ') {
-      let newKey = sentence[position]; //iterate each element
+  for (let i = 0; i < sentence.length; i++) {
+      if (sentence[i] !== ' ') {
+      let newKey = sentence[i]; //iterate each element
        if(results[newKey]) { //if newKey is already present, push position into it
-        results[newKey].push(position)
+        results[newKey].push(i)
       } else {
-        results[newKey] = [position]; //newKey is element in the string 
+        results[newKey] = [i]; //newKey is element in the string 
       }
     }
   } 
   return results;
 };
-
+console.log(letterPositions("hello").o)
 assertArraysEqual(letterPositions("hello").e, [1]);
