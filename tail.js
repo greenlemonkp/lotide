@@ -21,7 +21,7 @@ function tail(arr) {
   return newArr;
 }
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
+const words = tail(["Yo Yo", "Lighthouse", "Labs"]);
+assertEqual(words.length, 2);
 
-console.log(tail(words));
+module.exports = tail;
