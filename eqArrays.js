@@ -1,11 +1,3 @@
-//function implementation
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`👍👍👍 Assertion passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`🤢🤢🤢 Assertion failed ${actual} !== ${expected}`);
-  }
-};
 
 function eqArrays (firstArray, secondArray) {
   
@@ -14,9 +6,6 @@ function eqArrays (firstArray, secondArray) {
   console.log(isEqual);
 }
 
-eqArrays([1,2,3], [1,2,3]);
-eqArrays(["1", "2", "3"], ["1", "2", "3"])
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3])); // => should PASS
 
 
+module.exports = eqArrays;
