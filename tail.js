@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`👍👍👍 Assertion passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`🤢🤢🤢 Assertion failed ${actual} !== ${expected}`);
-  }
-};
-
 // eslint-disable-next-line func-style
 function tail(arr) {
   let newArr = [];
@@ -20,8 +12,5 @@ function tail(arr) {
   }
   return newArr;
 }
-
-const words = tail(["Yo Yo", "Lighthouse", "Labs"]);
-assertEqual(words.length, 2);
 
 module.exports = tail;
