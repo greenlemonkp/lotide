@@ -6,7 +6,7 @@ const words = tail(["Yo Yo", "Lighthouse", "Labs"]);
 
 
 describe("#tail", () => {
-  it("returns 1 for [1, 2, 3]", () => {
+  it("returns 2 for 2", () => {
     assert.deepEqual(words.length, 2);
   });
 });
