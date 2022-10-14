@@ -1,8 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
-
-const eqArrays = require('./eqArrays');
-
 // eslint-disable-next-line func-style
 function flatten(arr) {
   let result = [];
@@ -16,7 +11,5 @@ function flatten(arr) {
   }
   return result;
 }
-
-// console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
 
 module.exports = flatten;
