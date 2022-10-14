@@ -1,19 +1,7 @@
-const assertArraysEqual = function(firstArray, secondArray) {
-  if (firstArray.length === secondArray.length &&
-    firstArray.every((value, index) => value === secondArray[index])) {
-    console.log(` Assertion passed: ${firstArray} === ${secondArray}`);
-  } else {
-    console.log(` Assertion failed ${firstArray} !== ${secondArray}`);
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
-// eslint-disable-next-line func-style
-function eqArrays(firstArray, secondArray) {
-  
-  let isEqual = firstArray.length === secondArray.length &&
-  firstArray.every((value, index) => value === secondArray[index]);
-  console.log(isEqual);
-}
+
+const eqArrays = require('./eqArrays');
 
 // eslint-disable-next-line func-style
 function flatten(arr) {
@@ -29,4 +17,6 @@ function flatten(arr) {
   return result;
 }
 
-console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
+// console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
+
+module.exports = flatten;
