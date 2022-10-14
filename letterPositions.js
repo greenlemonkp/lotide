@@ -1,9 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
-
-const eqArrays = require('./eqArrays');
-
-
 const letterPositions = function (sentence) {
   const results = {};
   // logic to update results here
@@ -19,7 +13,6 @@ const letterPositions = function (sentence) {
   }
   return results;
 };
-// console.log(letterPositions("hello").o)
-// assertArraysEqual(letterPositions("hello").e, [1]);
+
 module.exports = letterPositions;
 
