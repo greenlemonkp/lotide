@@ -19,7 +19,4 @@ const middle = function(array) {
   
 };
   
-// //TEST CODE
-
-
 module.exports = middle;
