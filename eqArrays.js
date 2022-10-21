@@ -1,4 +1,4 @@
-const eqArrays = (arr1, arr2) => {
+const eqArrays = (arr1, arr2) => { //returns true if both arrays are equal or returns false
   if (Array.isArray(arr1) && Array.isArray(arr2)) {
     if (arr1.length !== arr2.length) {
       return false;
