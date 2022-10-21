@@ -4,7 +4,6 @@ const eqObjects = require('./eqObjects');
 // Otherwise you get back a big fat false!
 
 
-// FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function (actual, expected) {
   const inspect = require('util').inspect;
 
