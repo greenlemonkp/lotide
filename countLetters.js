@@ -1,5 +1,5 @@
 // eslint-disable-next-line func-style
-function countLetters(str) {
+function countLetters(str) { //counts number of letters in the string
   let newStr = str;
   let count = {};
   
