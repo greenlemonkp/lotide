@@ -5,9 +5,10 @@ const findKeyByValue = function (object, value) {
 
     if (object[k] === value) {
       result = k;
+      return result;
     }
   }
-  return result;
+  
 };
 
 module.exports = findKeyByValue;
