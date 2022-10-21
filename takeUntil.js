@@ -1,4 +1,4 @@
-const takeUntil = function(array, callback) {
+const takeUntil = function(array, callback) { //will keep collecting from array until truthy value from callback
   let result = [];
   for (let i = 0; i < array.length; i++) {
     if (callback(array[i])) {
