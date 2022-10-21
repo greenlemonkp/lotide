@@ -1,4 +1,5 @@
-function without(source, itemsToRemove) {
+// eslint-disable-next-line func-style
+function without(source, itemsToRemove) { //will return a subset of a given array, removing unwanted elements
   let result = [];
 
   for (let i = 0; i < source.length; i++) {
@@ -9,7 +10,7 @@ function without(source, itemsToRemove) {
       if (itemsToRemove[j] === source[i]) {
         result.pop();
       }
-      
+
     }
 
   }
