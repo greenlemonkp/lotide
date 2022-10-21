@@ -1,5 +1,5 @@
 // eslint-disable-next-line func-style
-function tail(arr) {
+function tail(arr) { //returns the "tail" of an array: everything except for the first item (head) of the provided array
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
     if (i === 0) {
